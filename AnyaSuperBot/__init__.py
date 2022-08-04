@@ -38,7 +38,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get('ENV', True))
 
 if ENV:
-    TOKEN = os.environ.get('TOKEN', "5413491390:AAFA6ojnW070AJ4GDqRC1IC8k3_mcjQa9z4")
+    TOKEN = os.environ.get('TOKEN', "")
 
     try:
         OWNER_ID = int(os.environ.get('OWNER_ID', 5531584953))
@@ -83,7 +83,7 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get('API_ID', 4665778)
     API_HASH = os.environ.get('API_HASH', "10e3ed833b0d09699973420d45359409")
-    DB_URI = os.environ.get('db_uri','postgres://rzgeatqi:CLn2r-lMpIzyKF9gRv5oPPHwLZRL1U-e@suleiman.db.elephantsql.com/rzgeatqi')
+    DB_URI = os.environ.get('db_uri','')
     SQLALCHEMY_DATABASE_URI = os.environ.get('postgres://rzgeatqi:CLn2r-lMpIzyKF9gRv5oPPHwLZRL1U-e@suleiman.db.elephantsql.com/rzgeatqi')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
