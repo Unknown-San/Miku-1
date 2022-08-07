@@ -45,7 +45,7 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    JOIN_LOGGER = os.environ.get('JOIN_LOGGER', -1001703672408)
+    JOIN_LOGGER = os.environ.get('JOIN_LOGGER', -1001788269784)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "XtheAnonymous")
 
     try:
@@ -83,7 +83,7 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get('API_ID', 4665778)
     API_HASH = os.environ.get('API_HASH', "10e3ed833b0d09699973420d45359409")
-    DB_URI = os.environ.get('DB_URI','')
+    DB_URI = os.environ.get('DB_URI','postgres://cvdnjwde:awG7m0MInHtbk-tdex10STbV9NNk6h_2@ziggy.db.elephantsql.com/cvdnjwde')
     SQLALCHEMY_DATABASE_URI = os.environ.get('')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
@@ -98,7 +98,7 @@ if ENV:
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
-    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', "@NexusXSupport")
+    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', "NakanoSupport")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
     REPOSITORY = os.environ.get("REPOSITORY", "")
@@ -111,11 +111,11 @@ if ENV:
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "lightYagami")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    BOT_NAME = os.environ.get("BOT_NAME", 'Anya') # Name Of your Bot.4
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "AnyaSuperbot") # Bot Username
+    BOT_NAME = os.environ.get("BOT_NAME", 'Miku') # Name Of your Bot.4
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "MIKUPROBOT") # Bot Username
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "") # From:- https://openweathermap.org/api
-    LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', '-1001733372611')
-    BOT_ID = 5413491390
+    LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', '-1001788269784')
+    BOT_ID = 2065748166
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', True))
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", 'mongodb+srv://ok:lol@cluster1.udhzs7r.mongodb.net/?retryWrites=true&w=majority')
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None) # From:- https://www.remove.bg/ 
