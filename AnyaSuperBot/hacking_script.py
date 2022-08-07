@@ -1,15 +1,14 @@
 PM_START_TEXT = """
-チ娘 "ᴡᴀᴋᴜ ᴡᴀᴋᴜ" {} - ꜱᴀɴ!
-ʏᴏꜱʜᴀ!! ᴍʏꜱᴇʟꜰ ᴀɴʏᴀ - ꜰᴏɢᴇʀ ꜰᴀᴍɪʟʏ ᴄᴜᴛᴇꜱᴛ ᴘᴇʀꜱᴏɴ ʜᴇʀᴇ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-
-❍ ᴛᴇꜱᴛ ᴠᴇʀꜱɪᴏɴ : 3.10.6
-❍ ꜱᴜʙᴊᴇᴄᴛ ᴜᴘᴛɪᴍᴇ : `{}`
-
-➢ ʜɪᴛ ᴛʜᴇ ᴛʜᴇ /help ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ. ××
+────「 [Miku Nakano]({}) 」────
+やあ *"O Kawaii Koto" {} - San!*
+*I'm the cutest of them five.*
+❍ *Version* : 3.10.6
+❍ *Uptime* : {}
+➢ *Try The More Options Buttons Below To See The Available Commands* ××
 """
 
 
-PM_START_PIC = "https://telegra.ph/file/1242331445d6fecba4237.png"
+PM_START_PIC = "https://telegra.ph/file/5bcdb3bae15c6a5c03a79.jpg"
 
 
 ## Don't Remove That Credits in PM_START_TEXT if yoy removed your app will be crashed.
