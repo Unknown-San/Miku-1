@@ -58,39 +58,29 @@ def get_readable_time(seconds: int) -> str:
 
 
 
+PHOTO = (
+      "https://telegra.ph/file/7b010b6aae925c9e7a433.jpg",
+      "https://telegra.ph/file/0f19f6e94b9648a05fb51.jpg",
+      "https://telegra.ph/file/5bcdb3bae15c6a5c03a79.jpg",
+      "https://telegra.ph/file/6369b05c428f0a83adc11.jpg",
+)
+
 buttons = [
     [
-        InlineKeyboardButton(
-            text="➕️ Add Anya Forger To Your Group ➕️",
-            url="t.me/AnyaSuperBot?startgroup=true",
-        ),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/MikuProBot?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(
-            text="Chat",
-            url="t.me/AnimeSerge",
-        ),
-        InlineKeyboardButton(
-            text="Network",
-            url="https://t.me/AogiriNetwork",
-        ),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/NakanoSupport"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="t.me/NakanoUpdates"),
     ],
     [
-        InlineKeyboardButton(
-            text="Support",
-            url="https://t.me/NexusXSupport",
-        ),
-        InlineKeyboardButton(
-            text="Anime Region",
-            url="https://t.me/AnimeRegion",
-        ),
-    ],
+        InlineKeyboardButton(text="ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴs", callback_data="Kaguya_"),
+    ],    
 ]
-
 
                     
 HELP_STRINGS = """
-Hey there! Myself [Anya Forger](https://telegra.ph/file/9e9e1112a16894e7998cf.jpg).
+Hey there! Myself [Miku](https://telegra.ph/file/7b010b6aae925c9e7a433.jpg).
 Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  ➛ /help: PM's you this message.
@@ -104,14 +94,12 @@ Have a look at the following for an idea of some of the things I can help you wi
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-HELP_IMG = "https://telegra.ph/file/d9c46e3db8952c020256b.jpg"
-JIN_IMG = "https://telegra.ph/file/e2034322c680ed63a0c4f.jpg"
+HELP_IMG = "https://telegra.ph/file/5bcdb3bae15c6a5c03a79.jpg"
+JIN_IMG = "https://telegra.ph/file/6369b05c428f0a83adc11.jpg"
 
 Saber_IMG = (
-      "https://telegra.ph/file/d9c46e3db8952c020256b.jpg",
-      "https://telegra.ph/file/9e9e1112a16894e7998cf.jpg",
-      "https://telegra.ph/file/060b79fec4a50f48d59ba.jpg",
-      )
+      "https://telegra.ph/file/7b010b6aae925c9e7a433.jpg",
+      "https://telegra.ph/file/0f19f6e94b9648a05fb51.jpg")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Click here to donate in [Unknown](https://t.me/XUltim8)"""
@@ -237,7 +225,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-                photo=(HELP_IMG), caption= "<b>Waku Waku !!! Uptime :</b>: <code>{}</code>".format(
+                photo=(HELP_IMG), caption= "<b>Lmao !!! Uptime :</b>: <code>{}</code>".format(
                 uptime
  
             ),
@@ -250,8 +238,8 @@ def start(update: Update, context: CallbackContext):
                              text="Nexus",
                              url=f"https://t.me/NexusXSupport"),
                        InlineKeyboardButton(
-                             text="Anime Tenki",
-                             url="https://t.me/AnimeSerge")
+                             text="Anime Folks",
+                             url="https://t.me/Anime_Chat_Folks")
                      ] 
                 ]
             ),
@@ -348,7 +336,7 @@ def Saber_about_callback(update, context):
         query.message.edit_text(
             text=f"[剣](https://telegra.ph/file/9e9e1112a16894e7998cf.jpg) Hey {escape_markdown(first_name)},"
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
-              f"\n\n Anya Forger  ➣ :-"
+              f"\n\n Miku  ➣ :-"
               f"\n\n I Am An Anime Themed Advance Group Management Bot With A Lot Of Awesome Features."
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
               f"\n\n Check The Buttons To Know About Me More.*",
@@ -358,10 +346,10 @@ def Saber_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Anime Tenki", url="t.me/Anime_Tenki"
+                            text="Anime Folks", url="t.me/Anime_chat_folks"
                         ),
                         InlineKeyboardButton(
-                            text="Developer", url="t.me/Xelcius"
+                            text="Developer", url="t.me/XtheAnonymous"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Saber_back")],
@@ -645,7 +633,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Waku Waku!!!](https://telegra.ph/file/060b79fec4a50f48d59ba.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Am Back to my job](https://telegra.ph/file/e13157a780e3039ff4dbb.jpg)", parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -657,7 +645,7 @@ def main():
 
                              text="[Off Topic Chat]",
 
-                             url=f"t.me/Anime_Tenki"),
+                             url=f"t.me/Anime_Chat_folks"),
 
 
                      ] 
