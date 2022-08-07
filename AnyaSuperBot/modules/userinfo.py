@@ -50,7 +50,7 @@ from AnyaSuperBot.modules.helper_funcs.extraction import extract_user
 from AnyaSuperBot import telethn
 from AnyaSuperBot import pbot
 
-Saber_IMG = "https://telegra.ph/file/9e9e1112a16894e7998cf.jpg"
+Saber_IMG = "https://telegra.ph/file/7b010b6aae925c9e7a433.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -243,10 +243,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/AnyaSanLogs/11"),
+                             url="https://t.me/NakanoUpdates/10"),
                        InlineKeyboardButton(
                              text="Disaster",
-                             url="https://t.me/AnyaSanLogs/12"),
+                             url="https://t.me/NakanoUpdates/8"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -347,7 +347,7 @@ def info(update: Update, context: CallbackContext):
                 custom_title = result["custom_title"]
                 text += f"\n\n• Title: <b>{custom_title}</b>"
                 
-        text += f"\n\n╘══「 •By @AnyaSuperBot• 」"
+        text += f"\n\n╘══「 •By @MikuProBot• 」"
                 
     except BadRequest:
         pass
@@ -440,7 +440,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Anya 剣 Statistics 」*\n\n"
+    status = "*╒═══「 Miku 剣 Statistics 」*\n\n"
     status += "*➢ System Start time:* " + str(uptime) + "\n"
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
@@ -449,7 +449,7 @@ def stats(update, context):
             status
             + "\n*Saber 剣 Statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[剣 Support](https://t.me/{SUPPORT_CHAT}) | [剣 Updates](https://t.me/TeamNexusX)\n\n"
+            + f"\n\n[剣 Support](https://t.me/{SUPPORT_CHAT}) | [剣 Updates](https://t.me/NakanoSUPPORT)\n\n"
             + "\n╘══「 By [The Aogiri](https://t.me/AogiriNetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
